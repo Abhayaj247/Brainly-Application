@@ -1,9 +1,8 @@
 import mongoose, { Schema, Types } from "mongoose";
 
 mongoose.connect(
-  "mongodb+srv://abhayjoshi23146:VqFw8jcaw8OmWrvF@cluster0.u4rs9.mongodb.net/brainly-app-db"
-    
-);  
+  process.env.MONGODB_URI!
+);
 
 const contentTypes = ["youtube","twitter"]; // Extend as needed
 
